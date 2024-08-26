@@ -1,2 +1,2 @@
 # Miscellaneous
-Miscellaneous scripts
+Miscellaneous non-PowerShell scripts
