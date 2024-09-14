@@ -25,6 +25,7 @@ Check for software updates: sudo apt update
 Install software upgrades: sudo apt upgrade
 Install Python 3: sudo apt install python3
 Install Selenium for Python 3: sudo apt install python3-selenium
+To avoid dependency/missing software issues, it may be wise to install a Python IDE such as Eric
 Install any other software you think you may need
 
 
@@ -33,6 +34,16 @@ After creating the scripts and/or putting them in your preferred directory, I wo
 Make the script executable: sudo chmod +x /path/to/script
 Change the ownership of the script (if needed): sudo chown username /path/to/script
 
+
+Also, be sure to make the following changes to the .sh and .py scripts:
+
+.sh script: It may be more efficient to rename it to something simpler (I use "modem-reboot.sh")
+.sh script line 3: Change the username to match the username running the script
+.sh script line 5: Change the path to the .py script (I use "/scripts/modem-reboot.py)
+.py script line 13: Verify the URL for your modem's web interface and change it if needed
+.py script line 20: Verify your modem's username and change it if needed
+.py script line 24: Verify your modem's password and change it if needed
+.py script line 34: Verify the URL for the CONFIGURATION page and change it if needed
 
 
 This solution is a bit convoluted, but my goal of sharing this is to help out at least one other person who was in this same situation. With some minor tweaks, this solution should work for other Linux distros. I would highly recommend renaming the Python and Bash scripts to something shorter and more straightforward in practice (i.e. "modem-reboot.py"). This was a fun project and it feels good to have another chore fully automated.
