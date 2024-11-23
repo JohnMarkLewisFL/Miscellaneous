@@ -3,7 +3,7 @@
 #!/bin/bash
 
 # Check for Fedora updates
-sudo dnf update --refresh -y
+sudo dnf update -y
 
-# Check for openSUSE upgrades
-sudo dnf upgrade -y
+# Check for Fedora upgrades
+sudo dnf upgrade --refresh -y
