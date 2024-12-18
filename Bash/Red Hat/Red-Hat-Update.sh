@@ -2,8 +2,5 @@
 
 #!/bin/bash
 
-# Check for Red Hat updates
-sudo dnf update -y
-
-# Check for Red Hat upgrades
-sudo dnf upgrade --refresh -y
+# Check for Red Hat updates and refresh the repositories
+sudo dnf update --refresh -y
