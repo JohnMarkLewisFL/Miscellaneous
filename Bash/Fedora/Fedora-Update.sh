@@ -2,8 +2,5 @@
 
 #!/bin/bash
 
-# Check for Fedora updates
-sudo dnf update -y
-
-# Check for Fedora upgrades
-sudo dnf upgrade --refresh -y
+# Check for Fedora updates and refresh the repositories
+sudo dnf update --refresh -y
